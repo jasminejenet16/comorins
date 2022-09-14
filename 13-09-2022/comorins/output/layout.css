@@ -13,9 +13,24 @@ nav{
     }
 section{
         background-color: lightgray;
-         text-align: center;
-        padding-top: 150px;
-        padding-bottom: 150px;}
+         overflow: hidden;}
+
+.slideshow{background-color: slategray;
+          text-align: center;
+          margin:5px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+
+}
+
+.column{
+    
+    width:32.4%;
+    background-color: aliceblue;
+    display: inline-block;
+    height: 200px;
+    margin-left: 10px;}
+
 footer{
         text-align: center;
         background-color: darkslategrey;
@@ -24,3 +39,7 @@ footer{
 h1{
     color: azure;
   }
+h2{color: azure;}
+.grid{
+ margin-top: 50px;
+margin-bottom: 50px;}
