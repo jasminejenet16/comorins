@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 10px;
+    
+}
+h1{
+    text-align: center;
+}
+header p{ 
+    text-align: center;
+    padding: 20px;
+}
+header{
+    background-color: cornsilk;
+}
+nav{
+    background-color: darkslategray;
+    padding: 10px;
+}
+
+
+ul li:last-child{
+    float:right;
+}
+li{
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+section{
+    margin-top: 10px;
+}  
+.titlehead{
+    width: 66%;
+    display: inline-block;
+}  
+.box1{
+    background-color: cornsilk;
+    padding: 20px;
+}
+.box2{background-color: cornsilk;
+padding: 20px;
+margin-top: 10px;}
+.img12{
+    background-color: gray;
+    padding-bottom: 100px;
+    padding-left: 5px;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;}
+    .aboutme{
+        display: inline-block;
+        width: 33.4686%;
+        vertical-align: top;
+        padding: 2px;
+    }
+    .box3{
+        background-color: cornsilk;
+        padding:20px ;
+    }
+    .myimage{
+        background-color: gray;
+        padding-bottom: 50px;
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+    .box4{
+        background-color: cornsilk;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .img3{
+        background-color: gray;
+        
+    }
+    
+    .box4 p{
+        padding-left: 5px;
+    }
+    .popular{
+        margin-bottom: 10px;
+    }
+    .box5{
+        background-color: cornsilk;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    footer{
+        background-color: darkgrey;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+    }

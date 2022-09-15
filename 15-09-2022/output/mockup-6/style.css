@@ -1,0 +1,47 @@
+*{margin: 0;
+padding: 0;}
+nav{
+    background-color: #333333;
+
+}
+li{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 27px;
+   font-weight: 500;
+    line-height: 32px;
+    color: #FFFEFE;
+    padding-right: 50px;
+
+}
+ul{
+    padding-left: 152px;
+    padding-right: 151px;
+    padding-top: 48px;
+    padding-bottom: 49px;
+    text-align: center;
+}
+header img{
+    width: 218px;
+    height: 146px;
+    padding-left: 112px;
+    padding-top: 26px;
+    padding-bottom: 37px;
+    
+}
+.firstline{
+    font-family: Roboto;
+   font-size: 26px;
+   font-weight: 400;
+    line-height: 30px;
+    float: right;
+     padding-top: 75px;
+    padding-bottom: 52px;
+
+
+}
+.search {
+    margin-left: 160px;
+}
+
+

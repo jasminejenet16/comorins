@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+ padding:0;
+ }
+ .banner{
+    background-color: lightgrey;
+    padding: 10px;
+    
+ }
+ header{
+    width: 76%;
+    margin: 0 auto;
+ }
+ h3{
+    display: inline-block;
+ }
+ ul{
+    display: inline-block;
+    float:right;
+ }
+ li{
+    display: inline-block;
+    margin-left:5px;
+ }
+ nav{
+     width: 76%;
+     margin: 0 auto;
+     margin-top: 30px;
+ }
+ .intro{
+    display: inline-block;
+    width: 30%;
+    
+ }
+ .intro p{
+   margin-top: 10px;
+ }
+   
+
+ .featured{
+    display: inline-block;
+    background-color: gray;
+    
+    padding: 20px;
+    width: 40%;
+    margin-left: 600px;
+    
+  
+ }
+ .boxes{
+    width: 80%;
+    margin-left: 190px;
+    margin-top: 40px;
+    
+    
+ }
+ 
+ 
+ .box1{
+    background-color: lightgrey;
+    
+    display: inline-block;
+    padding: 150px;
+    margin-left: 20px;
+
+ }
+ .box2{
+   background-color: lightgrey;
+   display: inline-block;
+   padding: 135px;
+   margin-left:20px;
+ }
+ .squares2{
+   margin-top: 20px;
+ }
+ .rectangle{
+   background-color: lightgrey;
+   width: 80%;
+   padding: 20px;
+   margin-top: 20px;
+   margin-left: 20px;
+   padding-right: 120px;
+ }
+  
+
+ footer{
+   background-color: lightgrey;
+   padding: 20px;
+   margin-top: 20px;
+ }
+ footer ul{
+   float:left;
+   margin-left:140px
+ }
+ footer li{
+   margin-left: 15px;
+ }
+footer p{
+   float:right;
+   margin-right: 180px;
+}
+
+ 
+ 
