@@ -28,20 +28,205 @@ header img{
     padding-top: 26px;
     padding-bottom: 37px;
     
+    
+}
+.secnav{
+    display: table;
+    width: 100%;
+}
+.navimg{
+    display: table-cell;
 }
 .firstline{
     font-family: Roboto;
    font-size: 26px;
    font-weight: 400;
     line-height: 30px;
-    float: right;
-     padding-top: 75px;
-    padding-bottom: 52px;
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    padding-top: 75px;
+    padding-right: 69px;
+}
+
+.indo{
+    display: inline-block;
+    width: 33.1%
+}
+.indo h2{
+    font-family: Roboto;
+font-size: 38px;
+font-weight: 400;
+line-height: 45px;
+color: #343434;
+text-align: left;
+padding-bottom: 23px;
+
+}
+.indo p{
+    font-family: Roboto;
+font-size: 23px;
+font-weight: 300;
+line-height: 35px;
+color: #343434;
+text-align: left;
+padding-top: 61px;
+padding-bottom: 14px;
+}
+.indo .con{
+    font-family: Roboto;
+font-size: 29px;
+font-weight: 400;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D9D34;
+}
+.firstsec{
+    background: #F3F2EE;
+}
+.indo img{
+    width: 369px;
+    height: 278px;
+    
+}
+.indo .border{
+    border:1px solid #6F6C6C;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 80px;
+
+}
+.firstsec {
+    padding-top: 72px;
+   padding-left: 38px;
+   padding-bottom: 13px;
+padding-right:45px
+}
+.secthree{
+    padding-top: 97px;
+    background-color: #F3F2EE;
+}
+.leftone{
+    width: 60%;
+    display: inline-block;
+}
+.grid{
+    margin-top: 40px;
+}
+.book{
+    display: inline-block;
+    width:31%;
+}
+.book img{
+    width: 183px;
+
+}
+.ametone{
+    padding-top: 130px;
+}
+.ametone h3{
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 66px;
+    color: #8F8F8F;
+    border-bottom: 1px solid #000000;
+
+    
+}
+.ametone img{
+    width: 202px;
+    padding: 10px;
+
+}
+.ametborder{
+    border: 1px solid #000000;
+
+    display: inline-block;
+    margin-top: 72px;
+    padding-top: 9px;
+}
+
+.ametborder h4{
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 31px;
+
+}
+.para {
+    display: inline-block;
+    width: 60%;
+
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.para h4{padding-bottom: 28px;
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 31px;
+color: #8F8F8F;
 
 
 }
-.search {
-    margin-left: 160px;
+.para p{
+    padding-bottom: 10px;
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+color: #8F8F8F;
+padding-top: 23px;
+
 }
+.para .p{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+color: #8F8F8F;
+padding-top: 20px;
+
+
+}
+.pa{font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #8F8F8F;
+    padding-top: 42px;
+    text-align: left;
+    
+
+}
+.amettwo{
+    display: inline-block;
+    width: 37%;
+    vertical-align: top;
+    padding-left: 20px;
+}
+.amettwo h3{
+    font-family: Roboto;
+font-size: 43px;
+font-weight: 400;
+line-height: 66px;
+
+}
+.phabor{
+    border: 1px double #7B7979;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 19px;
+    margin-right: 330px;
+}
+.phabor img{
+    width: 164px;
+}
+
 
 
