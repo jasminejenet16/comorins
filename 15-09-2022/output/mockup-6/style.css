@@ -72,6 +72,7 @@ color: #343434;
 text-align: left;
 padding-top: 61px;
 padding-bottom: 14px;
+margin-right: 121px;
 }
 .indo .con{
     font-family: Roboto;
@@ -96,18 +97,20 @@ color: #6D9D34;
     padding-bottom: 16px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-right: 80px;
+    margin-right: 92px;
 
 }
 .firstsec {
     padding-top: 72px;
    padding-left: 38px;
    padding-bottom: 13px;
-padding-right:45px
+
 }
 .secthree{
     padding-top: 97px;
-    background-color: #F3F2EE;
+    padding-left: 38px;
+    background: #E5E5E5;
+
 }
 .leftone{
     width: 60%;
@@ -139,7 +142,10 @@ padding-right:45px
 }
 .ametone img{
     width: 202px;
-    padding: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 .ametborder{
@@ -147,7 +153,7 @@ padding-right:45px
 
     display: inline-block;
     margin-top: 72px;
-    padding-top: 9px;
+
 }
 
 .ametborder h4{
@@ -165,7 +171,7 @@ line-height: 31px;
     margin-top: 60px;
     margin-left: 20px;
 }
-.para h4{padding-bottom: 28px;
+.para h4{padding-bottom: 23px;
     font-family: Roboto;
 font-size: 20px;
 font-weight: 400;
@@ -175,13 +181,14 @@ color: #8F8F8F;
 
 }
 .para p{
-    padding-bottom: 10px;
-    font-family: Roboto;
+    padding-bottom: 5px;
+    margin-right: 128px;
+color: #8F8F8F;
+font-family: Roboto;
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
-color: #8F8F8F;
-padding-top: 23px;
+
 
 }
 .para .p{
@@ -190,7 +197,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 25px;
 color: #8F8F8F;
-padding-top: 20px;
+
 
 
 }
@@ -215,17 +222,198 @@ padding-top: 20px;
 font-size: 43px;
 font-weight: 400;
 line-height: 66px;
+color: #8F8F8F;
+border-bottom:1px solid #949393 ;
+
+
 
 }
 .phabor{
-    border: 1px double #7B7979;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 19px;
-    margin-right: 330px;
+    display: inline-block;
+     border:1px solid #7B7979;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     padding-left: 19px;
+     padding-right: 19px;
+}
+.smalltop{
+    display: inline-block;
+    float: right;
+    width: 55%;
+}
+.smalltop h4{font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 37px;
+    color: #6C6C6C;
+    
 }
 .phabor img{
     width: 164px;
+}
+.smalltop p{
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 300;
+line-height: 34px;
+color: #707070;
+
+}
+.phaone .green{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 400;
+line-height: 37px;
+color: #6D9D34;
+text-align: right;
+padding-top: 17px;
+padding-bottom: 18px;
+
+}
+.phaone {
+    padding-top: 30px;
+    border-bottom: 1px solid #949393;
+}
+footer{
+    background-color: #333333;
+    padding-top: 63px;
+    
+
+}
+footer h3{
+    font-family: Roboto;
+font-size: 43px;
+font-weight: 400;
+line-height: 66px;
+color: #B1B1B1;
+border-bottom: 1px solid#F0F0F0;
+
+}
+.about{
+    display: inline-block;
+    width: 40%;
+    padding-left: 44px;
+    padding-bottom: 57px;
+    
+}
+.usbor{
+    border: 1px solid #C2C2C2;
+    display: inline-block;
+    margin-top: 26px;
+}
+.usbor img{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.ab{
+    display: inline-block;
+    width: 40%;
+    margin-top: 28px;
+    float: right;
+    margin-right: 90px;
+}
+.ab h4{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 400;
+line-height: 41px;
+color: #FFFFFF;
+
+
+}
+.ab p{
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 22px;
+color: #FFFFFF;
+}
+.about p{
+    font-family: Roboto;
+font-size: 19px;
+font-weight: 400;
+line-height: 23px;
+color: #FFFFFF;
+padding-top: 15px;
+
+}
+.mor{
+    margin-top: 18px;
+}
+.latest{
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    padding-left: 21px;
+    padding-bottom: 57px;
+    
+}
+.latest img{
+    width: 111px;
+}
+.first3{
+    padding-top: 26px;
+    padding-bottom: 50px;
+    
+}
+
+  .six{
+    padding-left: 16px;
+    width: 111px;
+    display: inline-block;
+  }  
+
+.contact{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding-left: 32px;
+    width: 22%;
+    padding-bottom: 57px;
+
+
+}
+.contact p{
+    font-family: Roboto;
+font-size: 21px;
+font-weight: 400;
+line-height: 41px;
+color: #FFFFFF;
+
+}
+.details{
+    padding-top: 25px;
+}
+.contact a{
+    color: #6D9D34;
+}
+
+footer .last{
+    background-color: #777777;
+}
+
+.last p{
+    font-family: Roboto;
+font-size: 21px;
+font-weight: 400;
+line-height: 41px;
+color: #D7E8B9;
+display: inline-block;
+
+}
+.template{
+    text-align: right;
+    float: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 28px;
+}
+.copy{
+    padding-left: 41px;
+    padding-bottom: 23px;
+    padding-top: 23px;
 }
 
 
