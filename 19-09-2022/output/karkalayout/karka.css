@@ -1,0 +1,292 @@
+*{margin: 0;
+  padding: 0;}
+  @media(min-width:575px){
+    body{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .top{
+        background-color: aliceblue;
+        padding: 15px;
+    }
+    h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .top p{
+        text-align: center;
+    }
+   nav{
+    background-color: black;
+text-align: center;
+   }
+   nav ul{
+    display: inline-block;
+    color: aliceblue;
+    padding: 10px;
+    
+   }
+   nav li{
+    display: inline-block;
+   }
+   
+   
+   .left{
+    margin-top: 20px;
+    margin-left: 5px;
+   }
+   .right{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+   }
+   h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 5px;
+   }
+   h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+   }
+   p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+   }
+   .img{
+    background-color: darkgrey;
+    padding-left: 5px;
+   }
+   .left .img{
+    padding-bottom: 150px;
+   }
+   .right .img{
+    padding-bottom: 80px;
+   }
+   .three{
+    
+    background-color: aliceblue;
+    
+   }
+   .four{
+    margin-top: 20px;
+    background-color: aliceblue;
+    padding-bottom: 10px;
+    
+   }
+   .five{
+    margin-top: 20px;
+    background-color: aliceblue;
+   }
+   .one{
+    background-color: aliceblue;
+   }
+   .two{
+    background-color: aliceblue;
+    margin-top: 10px;
+   }
+   footer{
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+   }
+
+  }
+  @media(min-width:767px){
+    body{
+        margin: 10px;
+        font-size: 20px;
+        
+    }
+    .top{
+        background-color: aliceblue;
+        padding: 15px;
+    }
+    h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .top p{
+        text-align: center;
+    }
+   nav{
+    background-color: black;
+     text-align: left;
+   }
+   nav ul{
+    display: inline-block;
+    color: aliceblue;
+    padding: 10px;
+   }
+   nav li{
+    display: inline-block;
+   }
+   nav ul:last-child{
+    float: right;
+   }
+   .left{
+    width: 59%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+   }
+   .right{
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+   }
+   h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+   h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   .img{
+    background-color: darkgrey;
+    padding-left: 5px;
+
+   }
+   .left .img{
+    padding-bottom: 150px;
+   }
+   .right .img{
+    padding-bottom: 80px;
+   }
+   .three{
+    
+    background-color: aliceblue;
+   }
+   .four{
+    margin-top: 20px;
+    background-color: aliceblue;
+    padding-bottom: 10px;
+   }
+   .five{
+    margin-top: 20px;
+    background-color: aliceblue;
+   }
+   .one{
+    background-color: aliceblue;
+   }
+   .two{
+    background-color: aliceblue;
+    margin-top: 10px;
+   }
+   footer{
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+   }
+}
+
+  
+  @media(min-width:1200px){
+    body{
+        margin: 10px;
+        font-size: 25px;
+        
+    }
+    .top{
+        background-color: aliceblue;
+        padding: 15px;
+    }
+    h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .top p{
+        text-align: center;
+    }
+   nav{
+    background-color: black;
+    text-align: left;
+   }
+   nav ul{
+    display: inline-block;
+    color: aliceblue;
+    padding: 10px;
+   }
+   nav li{
+    display: inline-block;
+   }
+   nav ul:last-child{
+    float: right;
+   }
+   .left{
+    width: 59%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+   }
+   .right{
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+   }
+   h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+   h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   .img{
+    background-color: darkgrey;
+    padding-left: 5px;
+    
+    
+   }
+   .left .img{
+    padding-bottom: 150px;
+   }
+   .right .img{
+    padding-bottom: 80px;
+   }
+   .three{
+    
+    background-color: aliceblue;
+   }
+   .four{
+    margin-top: 20px;
+    background-color: aliceblue;
+    padding-bottom: 10px;
+   }
+   .five{
+    margin-top: 20px;
+    background-color: aliceblue;
+   }
+   .one{
+    background-color: aliceblue;
+   }
+   .two{
+    background-color: aliceblue;
+    margin-top: 10px;
+   }
+   footer{
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+   }
+}
