@@ -1,0 +1,30 @@
+h1{
+    background-color: black;
+    color: aliceblue;
+    ;
+}
+nav{
+    background-color: grey;
+    color: aliceblue;
+   
+}
+.main{
+    background-color: gray;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+
+}
+.side{
+    background-color: darkgray;
+    color: aliceblue;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+    
+footer{
+    background-color: black;
+    color: aliceblue;
+    
+}
