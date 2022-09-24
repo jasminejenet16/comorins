@@ -15,15 +15,11 @@
         padding-bottom: 18px;
     }
     header :nth-child(2){
-        width: 100px;
-        float: right;
+        /* width: 100px;
+        float: right; */
         
     }
-    .menu img {
-        display: inline-block;
-        width: 100px;
-        float: right;
-    }  
+    
     .top{
         display: none;
     }
@@ -593,11 +589,7 @@
         padding-top: 17px;
         padding-bottom: 18px;
     }
-    .header :nth-child(2){
-           display: none;
-           float: none;
-           margin-right: 0;
-    }
+
     .top{
         width: 898px;
         display:inline-block;
@@ -636,7 +628,7 @@
     }
     .banleft{
         display: inline-block;
-        width: 56%;
+        width: 50%;
         vertical-align: top;
     
     }
@@ -657,7 +649,7 @@
     font-weight: 400;
     line-height: 31px;
     color: #666666;
-    width: 65%;
+    width: 57%;
     padding-left: 69px;
     padding-top: 27px;
     
@@ -668,7 +660,7 @@
         width: 39%;
     }
     .banright img{
-        width: 573px;
+        
         padding-top: 65px;
         padding-bottom: 81px;
     }
@@ -733,15 +725,16 @@
          border-radius: 10px;
  }
  .pic{
-        
+    
     background-color: #FCFCFC;
     margin-top: 48px;
     width: 18%;
     display: inline-block;
+   
 }
 .pic img{
-   padding-left: 48px;
-   padding-right: 45px;
+  
+ 
    padding-top: 58px;
    width: 297px;
 }
@@ -751,9 +744,9 @@
    font-weight: 700;
    line-height: 30px;
    columns: #494D56;
-   width: 50%;
+   width: 70%;
    padding-top: 29px;
-   padding-left: 25px;
+
    
 }
 .pic p{
@@ -762,9 +755,9 @@
    font-weight: 400;
    line-height: 30px;
    columns: #595959;
-    width: 50%;
+    width: 60%;
    padding-top: 20px;
-   padding-left: 32px;
+  
    padding-bottom: 33px;
 }
 .lastbox{
@@ -975,8 +968,7 @@
     }
     .banright{
         display: inline-block;
-        width: 39%;
-    }
+        
     .banright img{
         width: 573px;
         padding-top: 65px;
@@ -1046,12 +1038,12 @@
             border-radius: 10px;
     }
     .pic{
-        margin-right: 69px;
+        margin-right: 43px;
+        width: 18%;
     }
     
     .pic img{
        
-        margin-left: 35px;
         padding-top: 58px;
         width: 297px;
        
@@ -1064,7 +1056,7 @@
         columns: #494D56;
         width: 80%;
         padding-top: 29px;
-        margin-left: 60px;
+       
        
         
      }
@@ -1076,7 +1068,7 @@
         columns: #595959;
          width: 70%;
         padding-top: 20px;
-      margin-left: 62px;
+      
         padding-bottom: 33px;
      }
      footer{
