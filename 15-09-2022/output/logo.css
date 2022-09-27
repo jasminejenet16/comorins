@@ -26,6 +26,7 @@
      width: 76%;
      margin: 0 auto;
      margin-top: 30px;
+     padding-bottom: 40px;
  }
  .intro{
     display: inline-block;
@@ -40,10 +41,9 @@
  .featured{
     display: inline-block;
     background-color: gray;
-    
-    padding: 20px;
+    float: right;
+    padding: 40px;
     width: 40%;
-    margin-left: 600px;
     
   
  }
