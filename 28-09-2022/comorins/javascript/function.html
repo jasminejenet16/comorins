@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let list_1=[2,3,4,5,6]
+    let list_2=[4,6,7,8,9]
+    function totalvalue(arr){
+        let total=0;
+        for(let i=0;i<arr.length;i++){
+            total=total+arr[i]
+
+        }
+        return total;
+    }
+    let result=totalvalue(list_1);
+    console.log(result);
+
+    let result2=totalvalue(list_2);
+    console.log(result2);
+
+   </script> 
+</body>
+</html>

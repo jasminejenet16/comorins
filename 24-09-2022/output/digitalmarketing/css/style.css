@@ -3,6 +3,93 @@
     padding: 0;
 }
 header{
-    background-image: url("images/backgroundimage.png");
-    width: 100%;
+    background-image: url("../images/backgroundimg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
 }
+
+header h3{
+    font-family: Rubik;
+font-size: 36px;
+font-weight: 500;
+line-height: 43px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #FFFFFF;
+}
+ header h1{
+    font-family: Rubik;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 107px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #FFFFFF;
+ }
+ .navbar a{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+   color:#FFFFFF!important; 
+ }
+
+ 
+  .btn{
+    border-radius: 192px;
+    background-color: #98AA28;
+    color: #FFFFFF;
+    
+ 
+ }
+ 
+ .content h3 {
+    font-family: Rubik;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #253D32;
+ }
+ .content p{
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #78847D;    
+ }
+ .content .see{
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #A3B938;    
+ }
+ .vector h6{
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253D32;
+ }
+ .vector p{
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #78847D;
+
+ }
