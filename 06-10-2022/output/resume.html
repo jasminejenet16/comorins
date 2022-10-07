@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label>name:</label> <input type="text" onkeyup="addDetails('name',this.value)"/></br></br>
+    email:<input type="text" onkeyup="addDetails('email',this.value)"/></br></br>
+    phone:<input type="text" onkeyup="addDetails('phone',this.value)"/></br></br>
+    role:<input type="text" onkeyup="addDetails('role',this.value)"/></br></br>
+    objective:<textarea onkeyup="addDetails('objective',this.value)"></textarea></br></br>
+    skills:<input type="text" onkeyup="addDetails('skills',this.value,0)"/>
+            <input type="text" onkeyup="addDetails('skills',this.value,1)"/>
+            <input type="text" onkeyup="addDetails('skills',this.value,2)"/>
+            <input type="text" onkeyup="addDetails('skills',this.value,3)"/>
+
+
+    <table>
+        <thead>
+            <th>course</th>
+            <th>year</th>
+            <th>institute</th>
+            <th>percentage</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'Qualification')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'percentage')"/></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'percentage')"/></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'percentage')"/></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'percentage')"/></td>
+                
+            </tr>
+        </tbody>
+    </table></br>
+    <table>
+        <thead>
+            <th>course</th>
+            <th>duration</th>
+            <th>institute</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,0,'course')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,0,'duration')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,0,'institute')"/></td>
+                
+        </tr>
+        <tr>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,1,'course')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,1,'duration')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,1,'institute')"/></td>
+                
+        </tr>
+    </tbody>
+    </table></br>
+    <table>
+        <thead>
+            <th>title</th>
+            <th>abstract</th>
+            <th>year</th>
+        </thead>
+        <tbody>
+            <td><input type="text"onkeyup="addDetails('project',this.value,0,'title')"/></td>
+            <td><input type="text"onkeyup="addDetails('project',this.value,0,'abstract')"/></td>
+            <td><input type="text"onkeyup="addDetails('project',this.value,0,'year')"/></td>
+                
+        </tbody>
+    </table>
+    working_experience:<input type="text" onkeyup="addDetails('experience',this.value)"/></br></br>
+
+    hobbies:<input type="text" onkeyup="addDetails('hobbies',this.value,0)"/>
+            <input type="text" onkeyup="addDetails('hobbies',this.value,1)"/>
+            <input type="text" onkeyup="addDetails('hobbies',this.value,2)"/></br></br>
+           
+    <p>personal_details</p>
+    <label>fathers_name:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'fathers_name')"/></br></br>
+    <label>mothers_name:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'mothers_name')"/></br></br>
+    <label>date of bith:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'Dateofbirth')"/></br></br>
+    <label>gender:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'gender')"/></br></br>
+    <label>maritial_status:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'maritial_status')"/></br></br>
+    <label>Nationality:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'Nationality')"/></br></br>
+    <label>languages:</label></body><input type="text" onkeyup="addDetails('personal_details',this.value,'languages')"/></br></br>
+                                    <input type="text" onkeyup="addDetails('personal_details',this.value,'languages')"/>
+                                    <input type="text" onkeyup="addDetails('personal_details',this.value,'languages')"/>
+
+      
+    <div>
+        <code id="object"></code>
+    </div>
+    <script>
+       
+        let resume={
+            name:"Jasmine.j",
+            email:"jasminejohnplr@gmail.com",
+            phone:76867675654,
+            role:"full stack developer",
+            objective:"To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills. ",
+            Education:[
+                     {
+                     Qualification:"10th standard",
+                     Institution:"sgs matric school",
+                     marks_in_percentage:95,
+                     Year_of_passing:2015
+                     },
+                     {
+                     Qualification:"12th standard",
+                     Institution:"sgs matric school",
+                     marks_in_percentage:90,
+                     Year_of_passing:2017
+                     },
+                     {
+                     Qualification:"BSC mathematics",
+                     Institution:"NMCC",
+                     marks_in_percentage:81,
+                     Year_of_passing:2020
+                     },
+                   
+            ],
+            skills:["type writing","drawing","html","css"],
+            certification:[
+                      {
+                        course_name:"office_automation",
+                        duration_of_course:"one year",
+                        Institution:""
+                      },
+                      {
+                        course_name:"type writing",
+                        duration_of_course:"two years",
+                        Institution:""
+                      },
+            ],
+            project:[
+                 {
+                   title:"",
+                   abstract:"",
+                   year:""
+                 }
+   
+            ],
+            working_experience:"",
+
+            personal_details:{
+                     fathers_name:"john",
+                     mothers_name:"stella",
+                     Dateofbirth:16-08-1999,
+                     gender:"female",
+                     maritial_status:"unmarried",
+                     Nationality:"Indian",
+                     languages:["tamil","english"]
+                     
+            },
+            Hobbies:["listening music","singing","watching movies"],
+
+        }
+        
+    
+        resume_1={
+            skills:[],
+            education:[],
+            certification:[],
+            project:[],
+            hobbies:[],
+            personal_details:{},
+            
+        }
+        function addDetails(key,value,index=null,indexKey=null){
+            if(index==null && indexKey==null){
+            resume_1[key]=value;
+            }else if(indexKey==null){
+            resume_1[key][index]=value;
+            }else{
+                if(!resume_1[key][index]){
+                    resume_1[key][index]={};
+                }
+                resume_1[key][index][indexKey]=value;
+            }
+            
+            display();
+            
+          }
+            display();
+    
+       function display(){
+        document.getElementById("object").innerHTML=JSON.stringify(resume_1);
+       }
+    
+        
+    </script>
+</body>
+</html>
