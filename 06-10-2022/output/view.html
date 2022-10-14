@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 class="text-center">Resume</h1>
+    <section class="container">
+    <div class="row ">
+        <div class="col-5 index">
+          <h3 id="name"></h3>
+           <p id="email">email</p>
+           <p id="phone">phone</p>
+           <p id="role">role</p>
+           
+           <h5>objective</h5>
+           <p id="objective"></p>
+         
+           <h5>education</h5>
+           <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Qualification</th>
+                <th scope="col">Institution</th>
+                <th scope="col">mark-in percentage</th>
+                <th scope="col">year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="course0"></td>
+                <td id="year0"></td>
+                <td id="institute0"></td>
+                <td id="percentage0"></td>
+                
+              </tr>
+              <tr>
+                <td id="course1 "></td>
+                <td id="year1 "></td>
+                <td id="institute1 "></td>
+                <td id="percentage1 "></td>
+              </tr>
+              <tr>
+                <td id="course2 "></td>
+                <td id="year2 "></td>
+                <td id="institute2 "></td>
+                <td id="percentage2 "></td>
+              </tr>
+              <tr>
+                <td id="course3 "></td>
+                <td id="year3 "></td>
+                <td id="institute3 "></td>
+                <td id="percentage3 "></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+           <h5>skill</h5>
+           <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+           </ul>
+           <h5>hobbies:</h5><label id="hobbies"></label></br>
+
+        </div>
+        <div class="col-7">
+            <h5>certification</h5>
+        <table class="table">
+            <thead>
+                <tr>
+                  <th scope="col">course_name</th>
+                  <th scope="col">duration_of_course</th>
+                  <th scope="col">Institution</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td id="courses0"></td>
+                    <td id="duration0"></td>
+                    <td id="institutes0"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td id="courses1"></td>
+                    <td id="duration1"></td>
+                    <td id="institutes1"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td id="courses2"></td>
+                    <td id="duration2"></td>
+                    <td id="institutes2"></td>
+                    
+                  </tr>
+                  
+              </tbody>
+        </table>
+            <h5>project</h5>
+          
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th scope="col">title</th>
+                      <th scope="col">abstract</th>
+                      <th scope="col">year</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td id="title0"></td>
+                        <td id="abstract0"></td>
+                        <td id="years0"></td>
+                      </tr>
+                      <tr>
+                        <td id="title1"></td>
+                        <td id="abstract1"></td>
+                        <td id="years1"></td>
+                      </tr>
+                      <tr>
+                        <td id="title2"></td>
+                        <td id="abstract2"></td>
+                        <td id="years2"></td>
+                      </tr>
+                  </tbody>
+            </table>
+            <h5>working_experience:</h5>
+            <p id="experience"></p>
+            <h5 >personal_details</h5>
+            <label>fathers_name:</label><label id="fathers_name"></label></br>
+            <label>mothers_name:</label><label id="mothers_name"></label></br>
+            <label>Dateofbirth:</label><label id="Dateofbirth"></label></br>
+            <label>gender:</label><label id="gender"></label></br>
+            <label>maritial_status:</label ><label id="maritial_status"></label></br>
+            <label>Nationality:</label><label id="nationality"></label></br>
+            <label>languages:</label><label id="languages"></label></br>
+            
+
+
+
+        </div>
+
+    </div>
+    </section>
+
+     <script>
+        let resumeselect=JSON.parse(localStorage.getItem("list"))
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const product = urlParams.get('name');
+        alert(product);
+        for(let i=0;i<resumeselect.length;i++){
+            if(product==resumeselect[i].name){
+              document.getElementById("name").textContent=resumeselect[i].name
+              document.getElementById("email").textContent=resumeselect[i].email
+              document.getElementById("phone").textContent=resumeselect[i].phone
+              document.getElementById("role").textContent=resumeselect[i].role
+              document.getElementById("objective").textContent=resumeselect[i].objective
+              document.getElementById("hobbies").textContent=resumeselect[i].hobbies
+              document.getElementById("experience").textContent=resumeselect[i].experience
+
+              document.getElementById("fathers_name").textContent=resumeselect[i].personal_details.fathers_name
+              document.getElementById("mothers_name").textContent=resumeselect[i].personal_details.mothers_name
+              document.getElementById("Dateofbirth").textContent=resumeselect[i].personal_details.Dateofbirth
+              document.getElementById("gender").textContent=resumeselect[i].personal_details.gender
+              document.getElementById("maritial_status").textContent=resumeselect[i].personal_details.maritial_status
+              document.getElementById("nationality").textContent=resumeselect[i].personal_details.Nationality
+              document.getElementById("languages").textContent=resumeselect[i].languages
+
+              let educationdetails=resumeselect[i].education
+              for(let i=0;i<educationdetails.length;i++){
+                document.getElementById("course"+i).textContent=educationdetails[i].course;
+                document.getElementById("year"+i).textContent=educationdetails[i].year;
+                document.getElementById("institute"+i).textContent=educationdetails[i].institute;
+                document.getElementById("percentage"+i).textContent=educationdetails[i].percentage;
+              }
+              
+              let projectdetails=resumeselect[i].project
+              for(let i=0;i<projectdetails.length;i++){
+                document.getElementById("title"+i).textContent=projectdetails[i].title;
+                document.getElementById("abstract"+i).textContent=projectdetails[i].abstract;
+                document.getElementById("years"+i).textContent=projectdetails[i].year;
+                
+              }
+
+              let certificationdetails=resumeselect[i].certification
+              for(let i=0;i<certificationdetails.length;i++){
+                document.getElementById("courses"+i).textContent=certificationdetails[i].course;
+                document.getElementById("duration"+i).textContent=certificationdetails[i].duration;
+                document.getElementById("institutes"+i).textContent=certificationdetails[i].institute;
+                
+              }
+              
+              
+
+
+            }
+        }
+    </script> 
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>share market</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <!--header section starts here-->
+    <header>
+        <nav class="navbar navbar-expand-lg nav  ">
+            <a class="navbar-brand" width="70%" href="index.html"><img src="https://www.freeiconspng.com/thumbs/news-icon/news-icon-24.png" width="50%" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active navli pr-2">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active navli pr-2">
+                        <a class="nav-link" href="politics.html">Politics<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item navli pr-2">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                    <li class="nav-item navli pr-2">
+                        <a class="nav-link" href="crime.html">Crime</a>
+                    </li>
+                    <li class="nav-item navli pr-2">
+                        <a class="nav-link"  href='sports.html'>Sports</a>
+                    </li>
+                    <li class="nav-item navli pr-2">
+                        <a class="nav-link " href="sharemarket.html">Share market</a>
+                    </li>
+                    <li class="nav-item navli pr-2">
+                        <a class="nav-link " href="cryptomarket.html">Crypto market</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="bookmark.html"> <button type="button" class="btn btn-outline-warning">BOOK MARK</button> </a>
+                </form>
+
+            </div>
+        </nav>
+     
+    </header>
+       
+    <!--header section ends here-->
+    <!--sharemarketnews starts here-->
+    <section class="container">
+        <div  id="card" class="row mt-3">
+        </div>
+        
+        
+    </section>
+    <!--sharemarketsnews starts here-->
+        <!--footer sec starts here-->
+        <footer class="pt-5 pb-5">
+            <div class="row m-0 p-0">
+                <div class="col-6 text-center">
+                    <a class="navbar-brand" href="index.html"><img src="https://www.freeiconspng.com/thumbs/news-icon/news-icon-24.png" width="50%" /></a>
+                    <h2>News Letter</h2>
+                    <p>Want to know what we,re upto sign-up for the newsletter and join our tribe</p>
+    
+    
+                </div>
+                <div class="col-3">
+                    <h5 >categories</h5>
+                    <ul>
+                        <a href="entertainment.html"><li>Entertainment</li></a>
+                        <a href="politics.html"><li>Politics</li></a>
+                        <a href="sharemarket.html"><li>share market</li></a>
+                        <a href="cryptomarket.html"><li>crypto market</li></a>
+                        <a href="sports.html"><li>sports</li></a>
+                        <a href="crime.html"><li> crime</li></a>
+                    </ul>
+                    <h5>Address</h5>
+                    <p>4/78,near MNB complex
+                        new delhi,</p>
+                    <p>postal code:688 988</p>
+                    
+                </div>
+                <div class="col-3">
+                     <h5 >Follow us</h5>
+                      <ul>
+                        <li><a href="https://www.facebook.com/ " target="_blank">facebook</a></li>
+                        <li><a href="https://www.Instagram.com/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.Twitter.com/ " target="_blank">Twitter</a></li>
+                      </ul>
+                      <h5>contact</h5>
+                      <p>phone:1289304789</p>
+                      <p>Email:newsletter@gmail.com</p>
+    
+                </div>
+    
+            </div>
+        </footer>
+        <!--footer sec ends here-->
+
+        <!--script start here-->
+
+     <script>
+        let newsDetails=JSON.parse(localStorage.getItem("newslocal"))
+        for(let i=0;i<newsDetails.length;i++){
+                if(newsDetails[i].category=="share market"){
+                    let ele="";
+                       ele+='<div class="card mb-3  col-6" ><img src='+newsDetails[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+newsDetails[i].newsId+' "target=_blank">'+newsDetails[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+newsDetails[i].date+'</small></p></div</div>'
+                       document.getElementById("card").innerHTML+=ele
+                }
+
+            }
+     </script>
+        <!--script start here-->
+
+</body>
+</html>

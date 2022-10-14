@@ -1,0 +1,44 @@
+/* nav sec starts here*/
+
+.nav{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 36px; 
+     background-color: black
+}
+.nav a{
+    color: white;
+
+}
+ .nav a:hover{
+    color:yellow;
+}
+
+/*nav sec end here*/
+
+/*news sec start here*/
+ .viewtext h5{
+    font-size: 30px;
+ }
+ .viewtext{
+  font-size: 20px;
+ }
+
+
+/*news sec start here*/
+
+/*footer sec starts here*/
+
+footer{
+    background-color: black;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+     color: yellow;
+}
+
+/*footer sec ends here*/
+  
