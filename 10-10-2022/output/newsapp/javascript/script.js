@@ -377,6 +377,7 @@ let news=[
             },
        
 ]
+  
     //--local storage setting starts here//
        
         localStorage.setItem("newslocal",JSON.stringify(news));
@@ -394,6 +395,48 @@ let news=[
         }  
         document.getElementById("display").innerHTML=element; 
     //--displaying title and images ends here//
+    //   function nav(){
+    //    for(let i=0;i<news_list[i].length;i++){
+    //     document.getElementById("navcategory").innerHTML==news_list[i].category;
+    //    }
+    // }
+
+    let nav_category=["sports"]
+        
+     if(!localStorage.getItem("category list")){
+        localStorage.setItem("category list",JSON.stringify([]))
+    }
+    localStorage.setItem("category list",JSON.stringify(nav_category)) 
+     for(let i=0;i<nav_category[i];i++){
+     document.getElementById("navcategory").innerHTML==nav_category[i]
+     }
+    
+     
+    // for(let i=0;i<news_list.length;i++){
+  
+    //     if(news_list[i].category=="sports"){
+          
+    //         nav_category[0]='<div class="card mb-3  col-4" ><img src='+news_list[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+news_list[i].newsId+' "target=_blank">'+news_list[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+news_list[i].date+'</small></div></div>'
+    //          nav_category.push( nav_category[0]);
+    //     }else if(news_list[i].category=="entertainment"){
+    //         nav_category[1]='<div class="card mb-3  col-4" ><img src='+news_list[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+news_list[i].newsId+' "target=_blank">'+news_list[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+news_list[i].date+'</small></div></div>'
+    //         nav_category.push(nav_category[1]);
+    //     }else if(news_list[i].category=="crime"){
+    //         nav_category[2]='<div class="card mb-3  col-4" ><img src='+news_list[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+news_list[i].newsId+' "target=_blank">'+news_list[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+news_list[i].date+'</small></div></div>'
+    //         nav_category.push(nav_category[2]);
+    //     }else if(news_list[i].category=="politics"){
+    //         nav_category[3]='<div class="card mb-3  col-4" ><img src='+news_list[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+news_list[i].newsId+' "target=_blank">'+news_list[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+news_list[i].date+'</small></div></div>'
+    //         nav_category.push(nav_category[3]);
+    //     }else if(news_list[i].category=="share market"){
+    //         nav_category[4]='<div class="card mb-3  col-4" ><img src='+news_list[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+news_list[i].newsId+' "target=_blank">'+news_list[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+news_list[i].date+'</small></div></div>'
+    //         nav_category.push(nav_category[4]);
+    //     }else if(news_list[i].category==" crypto market"){
+    //         nav_category[5]='<div class="card mb-3  col-4" ><img src='+news_list[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+news_list[i].newsId+' "target=_blank">'+news_list[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+news_list[i].date+'</small></div></div>'
+    //         nav_category.push(nav_category[5]);
+    //     }
+        
+    // }
+    // console.log(nav_category);
     
     
 

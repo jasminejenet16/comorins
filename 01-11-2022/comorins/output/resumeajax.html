@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <label>name:</label> <input type="text" onkeyup="addDetails('name',this.value)"/></br></br>
+    <label>email:</label><input type="text" onkeyup="addDetails('email',this.value)"/></br></br>
+    <label>phone:</label><input type="text" onkeyup="addDetails('phone',this.value)"/></br></br>
+    <label>role:</label><input type="text" onkeyup="addDetails('role',this.value)"/></br></br>
+    <label>objective:</label><textarea onkeyup="addDetails('objective',this.value)"></textarea></br></br>
+    <label>skills:</label><input type="text" onkeyup="addDetails('skills',this.value,0)"/>
+            <input type="text" onkeyup="addDetails('skills',this.value,1)"/>
+            <input type="text" onkeyup="addDetails('skills',this.value,2)"/>
+            <input type="text" onkeyup="addDetails('skills',this.value,3)"/>
+
+
+    <table>
+        <thead>
+            <th>course</th>
+            <th>year</th>
+            <th>institute</th>
+            <th>percentage</th>
+            <th>popup</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,0,'percentage')"/></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,1,'percentage')"/></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,2,'percentage')"/></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'course')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'year')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'institute')"/></td>
+                <td><input type="text"onkeyup="addDetails('education',this.value,3,'percentage')"/></td>
+                
+            </tr>
+        </tbody>
+    </table></br>
+    <table>
+        <thead>
+            <th>course</th>
+            <th>duration</th>
+            <th>institute</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,0,'course')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,0,'duration')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,0,'institute')"/></td>
+                
+        </tr>
+        <tr>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,1,'course')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,1,'duration')"/></td>
+            <td><input type="text"onkeyup="addDetails('certification',this.value,1,'institute')"/></td>
+                
+        </tr>
+    </tbody>
+    </table></br>
+    <table>
+        <thead>
+            <th>title</th>
+            <th>abstract</th>
+            <th>year</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td><input type="text"onkeyup="addDetails('project',this.value,0,'title')"/></td>
+            <td><input type="text"onkeyup="addDetails('project',this.value,0,'abstract')"/></td>
+            <td><input type="text"onkeyup="addDetails('project',this.value,0,'year')"/></td>
+            </tr> 
+            <tr>
+                <td><input type="text"onkeyup="addDetails('project',this.value,0,'title')"/></td>
+                <td><input type="text"onkeyup="addDetails('project',this.value,0,'abstract')"/></td>
+                <td><input type="text"onkeyup="addDetails('project',this.value,0,'year')"/></td>
+                </tr>       
+        </tbody>
+    </table>
+    working_experience:<input type="text" onkeyup="addDetails('experience',this.value)"/></br></br>
+
+    hobbies:<input type="text" onkeyup="addDetails('hobbies',this.value,0)"/>
+            <input type="text" onkeyup="addDetails('hobbies',this.value,1)"/>
+            <input type="text" onkeyup="addDetails('hobbies',this.value,2)"/></br></br>
+           
+    <p>personal_details</p>
+    <label>fathers_name:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'fathers_name')"/></br></br>
+    <label>mothers_name:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'mothers_name')"/></br></br>
+    <label>date of bith:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'Dateofbirth')"/></br></br>
+    <label>gender:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'gender')"/></br></br>
+    <label>maritial_status:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'maritial_status')"/></br></br>
+    <label>Nationality:</label><input type="text" onkeyup="addDetails('personal_details',this.value,'Nationality')"/></br></br>
+    <label>languages:</label></body><input type="text" onkeyup="addDetails('languages',this.value,0)"/></br></br>
+                                    <input type="text" onkeyup="addDetails('languages',this.value,1)"/>
+                                    <input type="text" onkeyup="addDetails('languages',this.value,2)"/>
+     
+        <button class="submit" >submit</button> 
+        <!-- <button class="getresume">get my resume</button>   -->
+        <button class="delete">delete resume</button>    
+        <button class="view">view resume</button>                 
+
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th >s.no</th>
+                <th >name</th>
+                <th >mail</th>
+                <th >action</th>
+                <th>popup</th>
+              </tr>
+            </thead>
+            <tbody class="namelist">
+             
+            </tbody>
+          </table>
+    <div>
+        <code id="object"></code>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js">
+    </script>
+    <script>
+       
+        resume_1={
+        
+            skills:[],
+            education:[],
+            certification:[],
+            project:[],
+            hobbies:[],
+            personal_details:{},
+            languages:[],
+        }
+        
+        function addDetails(key,value,index=null,indexKey=null){
+            if(index==null && indexKey==null){
+            resume_1[key]=value;
+            }else if(indexKey==null){
+            resume_1[key][index]=value;
+            }else{
+                if(!resume_1[key][index]){
+                    resume_1[key][index]={};
+                }
+                resume_1[key][index][indexKey]=value;
+            }
+            
+           
+          }
+        $(document).ready(function(){
+
+
+            $(".submit").click(function(){
+                $.ajax({
+                    type:"post",
+                    url:" http://karka.academy/api/action.php",
+                    data:{
+                        request:"create_resume",
+                        user:"jasmine",
+                    },
+                   
+                    success:function(data){
+                        console.log(data)
+                        $(".namelist").html("");
+                        let resumedetails =JSON.parse(data);
+                        console.log(data)
+                        let datas=resumedetails.data
+                        
+                        for( let i=0;i<datas.length;i++){
+                            let details=JSON.parse(datas[i].data)
+
+                        $(".namelist").append("<tr><td>"+datas[i].id+"</td><td>"+details.name+"</td><td>"+details.email+"</td><td><button class='delete' value='"+datas[i].id+"'>delete</button></td><td><button class='view'value="+datas[i].id+"><a href=view.html?id="+datas[i].id+">view</a></button></td></tr>")
+                        
+                        }
+                       
+                        
+                    },
+                    error:function(){
+                        console.log('failed')
+                    }
+                  
+                 }),
+
+                })
+              
+                
+                $.ajax({
+                    type:"get",
+                    url:" http://karka.academy/api/action.php",
+                    data:{
+                        request:"get_user_resume",
+                        user:"jasmine",
+                    },
+                   
+                    success:function(data){
+                    
+                        let resumedetails =JSON.parse(data);
+                        console.log(data)
+                        let datas=resumedetails.data
+                        
+                        for( let i=0;i<datas.length;i++){
+                            let details=JSON.parse(datas[i].data)
+
+                        $(".namelist").append("<tr><td>"+datas[i].id+"</td><td>"+details.name+"</td><td>"+details.email+"</td><td><button class='delete' value='"+datas[i].id+"'>delete</button></td><td><button class='view'value="+datas[i].id+"><a href=view.html?id="+datas[i].id+">view</a></button></td></tr>")
+                        
+                        }
+                    },
+                    error:function(){
+                        console.log('failed')
+                    }
+                   
+                 })
+               
+             
+             
+            $(document).on('click', '.delete', function () {
+                let value=$(this).val()
+                $.ajax({
+                    type:"get",
+                    url:" http://karka.academy/api/action.php",
+                    data:{
+                        request:"delete_user_resume",
+                        user:"jasmine",
+                        id:1413,
+                       }, 
+                    success:function(data){
+                        $(".namelist").html("");
+                        let resumedetails =JSON.parse(data);
+                        console.log(data)
+                        let datas=resumedetails.data
+                        
+                        for( let i=0;i<datas.length;i++){
+                            let details=JSON.parse(datas[i].data)
+
+                        $(".namelist").append("<tr><td>"+datas[i].id+"</td><td>"+details.name+"</td><td>"+details.email+"</td><td><button class='delete' value='"+datas[i].id+"'>delete</button></td><td><button class='view'value="+datas[i].id+"><a href=view.html?id="+datas[i].id+">view</a></button></td></tr>")
+                        
+                        }   
+                        
+                         
+                     },
+                    error:function(){
+                        console.log('failed')
+                    }
+                   
+                }),
+            
+            })
+            
+          
+        })
+        
+    
+   
+       
+        
+    </script>
+</body>
+</html>

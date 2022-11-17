@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
     <h1 class="text-center">Resume</h1>
@@ -152,61 +151,42 @@
     </div>
     </section>
 
-     <script>
-        let resumeselect=JSON.parse(localStorage.getItem("list"))
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const product = urlParams.get('name');
-        alert(product);
-        for(let i=0;i<resumeselect.length;i++){
-            if(product==resumeselect[i].name){
-              document.getElementById("name").textContent=resumeselect[i].name
-              document.getElementById("email").textContent=resumeselect[i].email
-              document.getElementById("phone").textContent=resumeselect[i].phone
-              document.getElementById("role").textContent=resumeselect[i].role
-              document.getElementById("objective").textContent=resumeselect[i].objective
-              document.getElementById("hobbies").textContent=resumeselect[i].hobbies
-              document.getElementById("experience").textContent=resumeselect[i].experience
-              document.getElementById("skill").textContent=resumeselect[i].skills
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js">
+    </script>
+    <script>
 
-              document.getElementById("fathers_name").textContent=resumeselect[i].personal_details.fathers_name
-              document.getElementById("mothers_name").textContent=resumeselect[i].personal_details.mothers_name
-              document.getElementById("Dateofbirth").textContent=resumeselect[i].personal_details.Dateofbirth
-              document.getElementById("gender").textContent=resumeselect[i].personal_details.gender
-              document.getElementById("maritial_status").textContent=resumeselect[i].personal_details.maritial_status
-              document.getElementById("nationality").textContent=resumeselect[i].personal_details.Nationality
-              document.getElementById("languages").textContent=resumeselect[i].languages
-
-              let educationdetails=resumeselect[i].education
-              for(let i=0;i<educationdetails.length;i++){
-                document.getElementById("course"+i).textContent=educationdetails[i].course;
-                document.getElementById("year"+i).textContent=educationdetails[i].year;
-                document.getElementById("institute"+i).textContent=educationdetails[i].institute;
-                document.getElementById("percentage"+i).textContent=educationdetails[i].percentage;
-              }
-              
-              let projectdetails=resumeselect[i].project
-              for(let i=0;i<projectdetails.length;i++){
-                document.getElementById("title"+i).textContent=projectdetails[i].title;
-                document.getElementById("abstract"+i).textContent=projectdetails[i].abstract;
-                document.getElementById("years"+i).textContent=projectdetails[i].year;
-                
-              }
-
-              let certificationdetails=resumeselect[i].certification
-              for(let i=0;i<certificationdetails.length;i++){
-                document.getElementById("courses"+i).textContent=certificationdetails[i].course;
-                document.getElementById("duration"+i).textContent=certificationdetails[i].duration;
-                document.getElementById("institutes"+i).textContent=certificationdetails[i].institute;
-                
-              }
-              
-              
-
-
-            }
-        }
-    </script> 
+        $(document).ready(function(){
+          
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const product = urlParams.get('id')
+                console.log(product)
+        
+                $.ajax({
+                    type:"get",
+                    url:" http://karka.academy/api/action.php",
+                    data:{
+                        request:"get_resume_by_id",
+                        user:"jasmine",
+                        id: product
+                    }, 
+                    success:function(data){
+                        console.log(data)
+                        let resumedetails =JSON.parse(data);
+                        let datas=resumedetails.data;
+                        let details=JSON.parse(datas.data)
+                        $("#name").html(details.name)
+                        $("#email").html(details.email)
+                    },
+                    error:function(){
+                        console.log('failed')
+                    }
+                     
+            
+            })
+        
+        });
+    </script>
+    
 </body>
-
 </html>

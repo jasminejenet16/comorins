@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+     <div id="comp"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script >
+    let company=[
+    {
+      names:"Tata",
+      year:1985,
+      end:2021,
+      category:"retail"
+    },
+    {
+      names:"Tisco",
+      year:1999,
+      end:2019,
+      category:" non-retail"
+    },
+    {
+      names:"capecomorin",
+      year:2021,
+      end:2050,
+      category:"retail"
+    },
+   ]
+
+   let categorycompany=company.map(data=>data);
+ let retail=categorycompany.filter((data)=> {return data.category=="retail"});
+ console.log(retail)
+ retail.forEach(element=>$("#comp").append(`<p>company name:${element.names} <br/>started year:${element.year} <br/>incremented year${ element.year+1} <br/>ended year:${ element.end}<br/> category:${element.category}<br/></p>`));
+</script>
+    
+</body>
+</html>
